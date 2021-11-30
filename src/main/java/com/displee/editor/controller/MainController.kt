@@ -355,7 +355,7 @@ class MainController : Initializable {
 				}
 			}
 			println("config: ${config.version} $error")
-			error < 2
+			true
 		}
 		var configuration: ScriptConfiguration? = null
 		if (cacheLibrary.isOSRS()) {
@@ -372,13 +372,13 @@ class MainController : Initializable {
 		} else {
 			val configurations = arrayOf(
 					//< 500
-					ScriptConfiguration(464, "/cs2/opcode/database/rs2_new.ini", true, true),
+					//ScriptConfiguration(464, "/cs2/opcode/database/rs2_new.ini", true, true),
 					//>= 500 && < 643
-					ScriptConfiguration(667, "/cs2/opcode/database/rs2_old.ini", false, true),
+					//ScriptConfiguration(667, "/cs2/opcode/database/rs2_old.ini", false, true),
 					//>= 643
-					ScriptConfiguration(667, "/cs2/opcode/database/rs2_new.ini", false, false)
+					//ScriptConfiguration(667, "/cs2/opcode/database/rs2_new.ini", false, false),
 					//718
-					//ScriptConfiguration(718, "/cs2/opcode/database/rs2_new.ini", false, false) //TODO Fix 718
+					ScriptConfiguration(718, "/cs2/opcode/database/rs2_new.ini", false, false) //TODO Fix 718
 			)
 			for (i in configurations) {
 				if (testUnit(i)) {
