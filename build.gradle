@@ -18,7 +18,7 @@ plugins {
 
 archivesBaseName = 'cs2-editor'
 
-version = '1.3'
+version = '1.0'
 
 repositories {
     jcenter()
@@ -69,7 +69,7 @@ javafx {
 jar {
     destinationDirectory = file("$rootDir")
     manifest {
-        attributes 'Main-Class': 'com.displee.editor.Editor'
+        attributes 'Main-Class': 'com.displee.editor.DummyMain'
     }
     from {
         configurations.runtimeClasspath.collect {
