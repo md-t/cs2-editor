@@ -1,11 +1,14 @@
-package com.displee.editor;
+package com.displee.editor
+
+import kotlin.jvm.JvmStatic
 
 /**
  * @author Simplex
  * created on 2021-11-29
  */
-public class DummyMain {
-    public static void main(String[] args) {
-        EditorKt.main(args);
+object DummyMain {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        main(*args)
     }
 }
