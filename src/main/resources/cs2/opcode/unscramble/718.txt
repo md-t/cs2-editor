@@ -760,12 +760,12 @@
 5615 952 #guessed! 5616 950
 5616 950
 5617 643 #guessed! 5624 585
-5618 32 #guessed! 5624 585
+# missing? 5618
 # missing? 5619
 # missing? 5620
 # missing? 5621
 # missing? 5622
-# missing? 5623
+5623 32
 5624 585
 5625 82 #guessed! 5630 565
 5626 700 #guessed! 5630 565
